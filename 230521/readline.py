@@ -1,0 +1,10 @@
+f = open("c:\\temp\\t.txt", encoding="UTF-8")
+s = f.readline()
+while s != "":
+    print(s, end='')
+    s = f.readline()
+#f.close()
+#f = open("c:\\temp\\t.txt")
+f.seek(0)
+print(f.readline())
+f.close()
